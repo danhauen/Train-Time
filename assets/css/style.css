@@ -1,0 +1,34 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/R%C3%A9aumur_-_S%C3%A9bastopol_m%C3%A9tro_Paris_ligne_3_%282%29_par_Cramos.JPG/1280px-R%C3%A9aumur_-_S%C3%A9bastopol_m%C3%A9tro_Paris_ligne_3_%282%29_par_Cramos.JPG");
+    background-image:  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header {
+    background-color:#081251;
+    border: antiquewhite !important;
+    border-width: medium !important;
+    border-color: antiquewhite !important;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.card {
+    border-color: 	#081251;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-header {
+    background-color: #081251;
+}
+
+.btn {
+    background-color: 	#081251;
+    font-family: 'Raleway', sans-serif;
+}
