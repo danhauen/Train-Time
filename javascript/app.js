@@ -1,20 +1,20 @@
- // Firebase configuration
-//  var firebaseConfig = {
-//     apiKey: "AIzaSyBL6MdC8YSMWLRjAPp0XzbaU4sL1NF2T2g",
-//     authDomain: "train-time-748e6.firebaseapp.com",
-//     databaseURL: "https://train-time-748e6.firebaseio.com",
-//     projectId: "train-time-748e6",
-//     storageBucket: "train-time-748e6.appspot.com",
-//     messagingSenderId: "1032777039572",
-//     appId: "1:1032777039572:web:d23b7a5a1db733ac648541",
-//     measurementId: "G-ZTS4P9KVDN"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-//   firebase.analytics();
+ //Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyBL6MdC8YSMWLRjAPp0XzbaU4sL1NF2T2g",
+    authDomain: "train-time-748e6.firebaseapp.com",
+    databaseURL: "https://train-time-748e6.firebaseio.com",
+    projectId: "train-time-748e6",
+    storageBucket: "train-time-748e6.appspot.com",
+    messagingSenderId: "1032777039572",
+    appId: "1:1032777039572:web:d23b7a5a1db733ac648541",
+    measurementId: "G-ZTS4P9KVDN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
-// // global variables
-// var database = firebase.database();
+// global variables
+var database = firebase.database();
 
 // Moment.js
 moment().format();
