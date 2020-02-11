@@ -20,6 +20,12 @@ $(document).ready(function () {
     // global variables
     var database = firebase.database()
 
+    // HTML5 autofocus attribute
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+
+
 
     // display current time from W3
     function startTime() {
@@ -104,6 +110,9 @@ $(document).ready(function () {
 
         // Append the new row to the table
         $("#train-schedule").append(newRow);
+
+        // hide modal after entry
+        $('#myModal').modal('hide');
 
     });
 

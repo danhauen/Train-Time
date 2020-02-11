@@ -7,18 +7,21 @@ body {
     background-size: cover;
 }
 
-.header {
+.header, .modal-header {
     background-color:#081251;
 }
 
 
-h1 {
+h1, .modal {
     font-family: 'Raleway', sans-serif;
 
 }
 
+.close {
+    color: whitesmoke;
+}
 
-.card {
+.card, .modal-body, .modal-footer {
     border-color: 	#081251;
     background-color: #C6C2B9;
     font-family: 'Raleway', sans-serif;
@@ -29,8 +32,13 @@ h1 {
     background-color: #081251;
 }
 
-
 .btn {
+    color: whitesmoke;
     background-color: 	#081251;
     font-family: 'Raleway', sans-serif;
+    outline: medium whitesmoke !important;
+}
+
+.btn :hover {
+    color: coral !important;
 }
