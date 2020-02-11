@@ -12,7 +12,8 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- jquery -->
@@ -26,7 +27,7 @@
 </head>
 
 <body>
-    
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -37,6 +38,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <!-- modal form for train entry -->
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
@@ -59,93 +61,63 @@
                     <button type="submit" id="submit-train-btn" class="btn">Submit</button>
                     <button type="button" class="btn" data-dismiss="modal">Close</button>
                 </div>
-                
-                  
             </div>
         </div>
     </div>
-    
-    
-    
+    <!-- end modal form -->
+
     <!-- header -->
     <div class="container mt-4">
         <div class="header rounded-lg shadow-lg p-4 text-white text-center">
             <h1>Temps de Train</h1>
-        
-            <!-- <hr class="bg-white my-4"> -->
-            <!-- <div class="container pb-2 " id="txt"></div> -->
         </div>
     </div>
+    <!-- end header -->
     <br>
-    <!-- add train -->
-    <!-- <div class="container">
-        <div class="card shadow-lg mt-2">
-            <div class="card-header text-white">
-                Add Train
-            </div>
-            <div class="card-body">
-                <div class="header container-header"></div>
-                <form>
-                    <div class="row justify-content-around">
-                        <div class="form-group col-3">
-                            <label for="trainName">Train Name</label>
-                            <input type="text" class="form-control form-control-sm" id="inputTrainName">
-                        </div>
-                        <div class="form-group col-3">
-                            <label for="trainDest">Destination</label>
-                            <input type="text" class="form-control form-control-sm" id="inputDestination">
-                        </div>
-                        <div class="form-group col-2">
-                            <label for="trainFirst">First Train Time</label>
-                            <input type="time" class="form-control form-control-sm" id="inputFirstTrainTime">
-                        </div>
-                        <div class="form-group col-2">
-                            <label for="trainFreq">Frequency (min)</label>
-                            <input type="number" class="form-control form-control-sm" id="inputFrequency">
-                        </div>
-                        <button type="submit" id="submit-train-btn" class="btn btn-primary m-4">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <br> -->
     <!-- current schedule -->
     <div class="container">
         <div class="card shadow-lg">
             <div class="card-header text-white text-center">
                 Current Train Schedule
-                <div class="container pb-2 float-right" id="txt"></div>
+                <div class="container pb-2" id="txt"></div>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Train Name</th>
-                            <th scope="col">Destination</th>
-                            <th scope="col">Freq.(min)</th>
-                            <th scope="col">Next Arrival</th>
-                            <th scope="col">Min. Away</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white" id="train-schedule">
-                        <!----------------------------------->
-                        <!-- Table to be appended on input -->
-                        <!----------------------------------->
-                    </tbody>
-                </table>
-                </div> 
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Freq.(min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Min. Away</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white" id="train-schedule">
+                            <!----------------------------------->
+                            <!-- Table to be appended on input -->
+                            <!----------------------------------->
+                        </tbody>
+                    </table>
+                </div>
                 <!-- Trigger the modal with a button -->
-        <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add a Train</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add a Train</button>
             </div>
         </div>
     </div>
+    <!-- end train schedule -->
+
     <!-- js -->
     <script src="javascript/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
