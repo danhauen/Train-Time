@@ -40,22 +40,29 @@
                 </div>
                 <!-- modal form for train entry -->
                 <div class="modal-body">
-                    <form>
+                    <form id="myForm" role="form">                        
                         <div class="form-group">
                             <label for="trainName">Train Name</label>
-                            <input type="text" class="form-control form-control-sm" id="inputTrainName">
+                            <input type="text" class="form-control form-control-sm" id="inputTrainName" placeholder="Train Name" required> 
+                            <div class="help-block with-errors"></div>
+                            
                         </div>
                         <div class="form-group">
                             <label for="trainDest">Destination</label>
-                            <input type="text" class="form-control form-control-sm" id="inputDestination">
+                            <input type="text" class="form-control form-control-sm" id="inputDestination" placeholder="Destination" required>
+                            <div class="help-block with-errors"></div>
+                           
                         </div>
                         <div class="form-group">
                             <label for="trainFirst">First Train Time</label>
-                            <input type="time" class="form-control form-control-sm" id="inputFirstTrainTime">
+                            <input type="time" class="form-control form-control-sm" id="inputFirstTrainTime" placeholder="First Train" required>
+                            <div class="help-block with-errors"></div>
+                            
                         </div>
                         <div class="form-group">
                             <label for="trainFreq">Frequency (min)</label>
-                            <input type="number" class="form-control form-control-sm" id="inputFrequency">
+                            <input type="number" class="form-control form-control-sm" id="inputFrequency" placeholder="Frequency" required>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </form>
                     <button type="submit" id="submit-train-btn" class="btn">Submit</button>
@@ -82,7 +89,7 @@
                 Current Train Schedule
             </div>
             <div class="card-body">
-                <div class="table-responsive">
+                <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
                     <table class="table">
                         <thead>
                             <tr>
@@ -101,7 +108,7 @@
                     </table>
                 </div>
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add a Train</button>
+                <button type="button" class="btn mt-3" data-toggle="modal" data-target="#myModal">Add a Train</button>
             </div>
         </div>
     </div>
